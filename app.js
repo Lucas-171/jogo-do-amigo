@@ -20,7 +20,6 @@ exibirMensagemInicial();
 function verificarChute() {
     let chute = document.querySelector('input').value;
 
-    // Converte para número e valida a entrada
     chute = parseInt(chute);
     if (isNaN(chute) || chute < 1 || chute > numeroLimite) {
         exibirTextoNaTela('p', `Digite um número válido entre 1 e ${numeroLimite}`);
